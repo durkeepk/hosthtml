@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Main Analyses</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="prelim_anlayses_files/libs/clipboard/clipboard.min.js"></script>
+<script src="prelim_anlayses_files/libs/quarto-html/quarto.js"></script>
+<script src="prelim_anlayses_files/libs/quarto-html/popper.min.js"></script>
+<script src="prelim_anlayses_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="prelim_anlayses_files/libs/quarto-html/anchor.min.js"></script>
+<link href="prelim_anlayses_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="prelim_anlayses_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="prelim_anlayses_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="prelim_anlayses_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="prelim_anlayses_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="prelim_anlayses_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="prelim_anlayses_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="prelim_anlayses_files/libs/datatables-binding-0.33/datatables.js"></script>
+<script src="prelim_anlayses_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="prelim_anlayses_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="prelim_anlayses_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="prelim_anlayses_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="prelim_anlayses_files/libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="prelim_anlayses_files/libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="prelim_anlayses_files/libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="prelim_anlayses_files/libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="prelim_anlayses_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="prelim_anlayses_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#factor-level-results" id="toc-factor-level-results" class="nav-link active" data-scroll-target="#factor-level-results">Factor Level Results</a>
+  <ul class="collapse">
+  <li><a href="#results-table" id="toc-results-table" class="nav-link" data-scroll-target="#results-table">Results Table</a></li>
+  <li><a href="#plots" id="toc-plots" class="nav-link" data-scroll-target="#plots">Plots</a></li>
+  </ul></li>
+  <li><a href="#facet-level-results" id="toc-facet-level-results" class="nav-link" data-scroll-target="#facet-level-results">Facet Level Results</a>
+  <ul class="collapse">
+  <li><a href="#results-table-1" id="toc-results-table-1" class="nav-link" data-scroll-target="#results-table-1">Results Table</a></li>
+  <li><a href="#plots-1" id="toc-plots-1" class="nav-link" data-scroll-target="#plots-1">Plots</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Main Analyses</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="factor-level-results" class="level1">
+<h1>Factor Level Results</h1>
+<section id="results-table" class="level2">
+<h2 class="anchored" data-anchor-id="results-table">Results Table</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-661fee8471c9b13b282c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-661fee8471c9b13b282c">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"-2.025\" data-max=\"0.726\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0.002\" data-max=\"0.878\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"-7.408\" data-max=\"4.055\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"0.995\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness"],["Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness"],["other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength"],[0.121,0.16,0.454,-0.08400000000000001,0.027,0.01,-0.163,0.02,0.004,0.008999999999999999,0.5679999999999999,-0.008999999999999999,-0.058,-0.104,0.137,0.07000000000000001,-0.03,-0.054,-0.475,0.046,-0.057,-0.035,-0.317,0.008,-0.004,-0.002,-0.35,0.002,0.027,0.004,-0.362,0.155,-0.073,-0.079,-0.822,-0.007,-0.112,-0.006,-0.303,-0.041,-0.015,-0.011,-0.983,0.006,-0.161,-0.049,-0.789,-0.05,0.173,0.2,0.341,-0.057,0.013,-0.045,-2.025,0.167,0.004,0.002,-0.494,0.006,0.213,0.146,-0.051,0.174,-0.008999999999999999,-0.006,-0.196,-0.011,-0.023,0.013,0.008999999999999999,-0.021,-0,0.005,-0.362,-0,-0.17,-0.1,-0.178,-0.118,-0.082,-0.08799999999999999,0.015,0.015,-0.021,-0.023,0.726,-0.047,0.003,0,-0.36,0.005,0.011,-0.008999999999999999,0.07000000000000001,0.031],[0.06900000000000001,0.094,0.586,0.139,0.029,0.04,0.878,0.07000000000000001,0.002,0.004,0.414,0.006,0.054,0.07199999999999999,0.116,0.113,0.07000000000000001,0.093,0.584,0.139,0.029,0.039,0.868,0.06900000000000001,0.002,0.004,0.412,0.006,0.054,0.07099999999999999,0.115,0.111,0.07000000000000001,0.08699999999999999,0.545,0.129,0.029,0.036,0.8,0.064,0.002,0.004,0.375,0.005,0.053,0.066,0.106,0.104,0.068,0.093,0.58,0.138,0.029,0.039,0.867,0.06900000000000001,0.002,0.004,0.413,0.006,0.053,0.07000000000000001,0.113,0.11,0.07000000000000001,0.095,0.592,0.141,0.029,0.04,0.873,0.07000000000000001,0.002,0.004,0.413,0.006,0.053,0.07099999999999999,0.114,0.111,0.07000000000000001,0.094,0.591,0.14,0.029,0.04,0.872,0.07000000000000001,0.002,0.004,0.414,0.006,0.054,0.07199999999999999,0.116,0.113],[1.744,1.706,0.775,-0.603,0.912,0.258,-0.185,0.287,1.733,2.093,1.371,-1.523,-1.087,-1.444,1.186,0.619,-0.432,-0.574,-0.8129999999999999,0.328,-1.954,-0.891,-0.365,0.121,-1.834,-0.503,-0.849,0.305,0.499,0.059,-3.162,1.392,-1.037,-0.903,-1.507,-0.054,-3.925,-0.155,-0.378,-0.646,-7.291,-2.796,-2.621,1.081,-3.04,-0.738,-7.408,-0.483,2.525,2.157,0.587,-0.416,0.45,-1.146,-2.335,2.405,1.615,0.441,-1.198,1.019,4.054,2.083,-0.452,1.582,-0.121,-0.062,-0.331,-0.081,-0.772,0.338,0.01,-0.305,-0.082,1.193,-0.878,-0.076,-3.208,-1.417,-1.564,-1.061,-1.181,-0.9370000000000001,0.026,0.11,-0.712,-0.569,0.833,-0.671,1.27,0.074,-0.871,0.898,0.213,-0.132,0.598,0.271],[0.252,0.583,0.9340000000000001,0.9340000000000001,0.58,0.991,0.991,0.991,0.252,0.443,0.709,0.668,0.497,0.68,0.8110000000000001,0.9340000000000001,0.831,0.9399999999999999,0.9340000000000001,0.991,0.193,0.9340000000000001,0.979,0.991,0.238,0.96,0.9340000000000001,0.991,0.8100000000000001,0.991,0.07000000000000001,0.698,0.523,0.9340000000000001,0.668,0.991,0.001,0.991,0.979,0.9340000000000001,0,0.159,0.206,0.877,0.02,0.9340000000000001,0,0.96,0.066,0.443,0.9340000000000001,0.968,0.825,0.833,0.345,0.317,0.28,0.961,0.8110000000000001,0.919,0.001,0.443,0.961,0.644,0.955,0.991,0.991,0.991,0.669,0.991,0.995,0.991,0.976,0.8110000000000001,0.9340000000000001,0.991,0.013,0.698,0.648,0.877,0.448,0.9340000000000001,0.995,0.991,0.706,0.9409999999999999,0.9340000000000001,0.9340000000000001,0.414,0.991,0.9340000000000001,0.9340000000000001,0.9389999999999999,0.991,0.9340000000000001,0.991]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>factor<\/th>\n      <th>personality_trait<\/th>\n      <th>strength index<\/th>\n      <th>estimate<\/th>\n      <th>std.error<\/th>\n      <th>statistic<\/th>\n      <th>p_adjusted<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"Bfrtip","rowGroup":{"dataSrc":0},"columnDefs":[{"targets":0,"visible":false},{"className":"dt-right","targets":[3,4,5,6]},{"name":"factor","targets":0},{"name":"personality_trait","targets":1},{"name":"strength index","targets":2},{"name":"estimate","targets":3},{"name":"std.error","targets":4},{"name":"statistic","targets":5},{"name":"p_adjusted","targets":6}],"displayLength":10,"order":[],"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="plots" class="level2">
+<h2 class="anchored" data-anchor-id="plots">Plots</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-8-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-8-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-8-5.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-8-6.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="facet-level-results" class="level1">
+<h1>Facet Level Results</h1>
+<section id="results-table-1" class="level2">
+<h2 class="anchored" data-anchor-id="results-table-1">Results Table</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-fd7b119fb6518e96269d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-fd7b119fb6518e96269d">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"-1.966\" data-max=\"1.403\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0.002\" data-max=\"0.881\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"-6.148\" data-max=\"3.978\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"0.998\" data-scale=\"3\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Agreeableness&quot;,&quot;Conscientiousness&quot;,&quot;Emotionality&quot;,&quot;Extraversion&quot;,&quot;HonestyHumility&quot;,&quot;Openness&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness"],["Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Flexibility","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Forgiveness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Gentleness","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Patience","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Diligence","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Organization","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Perfectionism","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Prudence","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Anxiety","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Dependence","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Fearfulness","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Sentimentality","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Liveliness","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Sociability","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_Boldness","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Social_SS","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Fairness","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Greed","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Modesty","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Sincerity","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Aesthetic","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Ceativity","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Inquisitiveness","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality","Unconventionality"],["other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength","other rated strength (average)","other rated strength (average)","other rated strength (average)","other rated strength (average)","bicep size","bicep size","bicep size","bicep size","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","handgrip strength (lbs)","self-perceived strength","self-perceived strength","self-perceived strength","self-perceived strength"],["average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","average_other_rated_strength","bicep_ave","bicep_ave","bicep_ave","bicep_ave","hgs_max","hgs_max","hgs_max","hgs_max","sp_strong","sp_strong","sp_strong","sp_strong"],[0.035,0.074,0.426,-0.08500000000000001,0.018,0.013,-0.234,0.019,0,0.004,0.547,-0.008,-0.124,-0.139,0.06900000000000001,0.018,0.104,0.158,0.5659999999999999,-0.118,0.039,0.057,0.768,-0.061,0.003,0.008999999999999999,0.513,-0.008999999999999999,-0.031,-0.062,0.068,0.054,0.068,0.041,-0.233,0.06,0,-0.027,-0.624,0.057,0.003,0.003,-0.11,0.001,-0.059,-0.13,0.078,0.148,0.144,0.19,0.546,-0.098,0.021,-0.013,-0.445,0.049,0.005,0.011,0.705,-0.011,0.016,-0.007,0.187,0.004,0.025,0.003,-0.491,0.043,-0.043,-0.027,-0.596,0.03,-0.004,-0.002,-0.445,0.003,0.08599999999999999,0.008999999999999999,-0.394,0.295,0.013,-0.013,-0.49,0.049,-0.052,-0.046,-1.081,0.068,-0.004,-0.004,-0.611,0.005,0.026,0.007,-0.361,0.145,-0.119,-0.188,-0.894,0.146,-0.078,-0.035,0.729,-0.073,-0.005,-0,0.07199999999999999,-0.004,0.01,0.044,-0.338,0.011,-0.015,0.029,0.433,-0.097,0.001,0.005,0.162,-0.013,0,0,-0.003,-0,-0.037,-0.046,0.007,0.02,-0.062,-0.043,-0.381,-0.057,-0.074,0.025,0.599,-0.096,-0.013,-0.007,-0.099,-0.003,-0.1,0.039,-0.5669999999999999,-0.173,-0.028,-0.075,-0.863,0.093,-0.053,0.011,-0.342,-0.014,-0.008999999999999999,-0.011,-1.273,0.014,-0.063,-0.045,-0.483,0.091,-0.136,-0.114,-0.4,-0.065,-0.119,-0.018,0.5,-0.091,-0.013,-0.008,-0.525,0.001,-0.231,-0.079,-0.595,-0.198,0.019,0.014,-0.668,-0.005,-0.078,-0.035,-1.638,0.08400000000000001,-0.008999999999999999,-0.005,-0.821,0.004,-0.068,-0.048,-0.622,0.126,0.17,0.201,0.344,-0.066,0.019,-0.02,-1.558,0.125,0.006,0.008,-0.405,0.002,0.177,0.113,-0.06900000000000001,0.173,0.092,0.08400000000000001,-0.134,0.017,-0.019,-0.033,-1.267,0.091,-0.002,-0.003,-0.444,0.005,0.09,0.081,-0.204,0.077,0.159,0.256,1.057,-0.211,0.049,-0.007,-1.435,0.127,0.003,0,0.101,0.001,0.209,0.147,0.112,0.116,0.103,0.062,-0.26,0.094,-0.01,-0.083,-1.966,0.171,0.005,0,-0.787,0.011,0.175,0.105,0.011,0.166,-0.014,-0.042,-0.485,0.058,-0.029,-0.007,-0.439,0.016,-0.002,0.003,-0.291,-0,-0.106,-0.059,-0.213,-0.052,-0.018,-0.012,-0.093,-0.016,-0.019,0.012,0.697,-0.064,0.003,0.006,-0.545,0.003,-0.073,-0.001,-0.058,-0.156,0.081,0.128,0.148,-0.113,-0.013,0.023,-0.623,0.02,-0.003,0.003,-0.152,-0.003,-0.168,-0.126,-0.249,-0.029,-0.067,-0.082,-0.08599999999999999,0.034,-0.001,0.008999999999999999,0.299,-0.026,0,0.001,0.033,-0.001,-0.129,-0.099,0.019,-0.075,-0.068,-0.099,-0.54,0.062,-0.042,-0.012,0.204,-0.03,-0,0,-0.8090000000000001,0.007,-0.047,-0.061,-0.223,0.096,-0.093,-0.125,-0.329,0.07000000000000001,-0.016,-0.006,0.014,-0.007,-0,0.002,0.033,-0.002,0.006,0.008999999999999999,-0.111,0.025,-0.004,0.026,0.618,-0.058,0.02,0.002,1.403,-0.082,0.006,-0.003,-0.365,0.01,0.025,0.001,0.358,-0.042,-0.07099999999999999,-0.044,0.455,-0.054,-0.024,-0.063,0.481,-0.008999999999999999,0.004,0.001,0.252,-0,0.067,0.037,0.248,0.001],[0.07099999999999999,0.095,0.598,0.142,0.029,0.04,0.88,0.07000000000000001,0.002,0.004,0.418,0.006,0.053,0.07099999999999999,0.115,0.112,0.06900000000000001,0.093,0.585,0.139,0.029,0.04,0.869,0.07000000000000001,0.002,0.004,0.411,0.006,0.054,0.07199999999999999,0.116,0.113,0.06900000000000001,0.094,0.587,0.139,0.029,0.04,0.877,0.07000000000000001,0.002,0.004,0.416,0.006,0.054,0.07199999999999999,0.116,0.113,0.06900000000000001,0.093,0.582,0.138,0.029,0.04,0.868,0.06900000000000001,0.002,0.004,0.408,0.006,0.054,0.07199999999999999,0.116,0.113,0.07000000000000001,0.094,0.586,0.139,0.029,0.039,0.867,0.06900000000000001,0.002,0.004,0.411,0.006,0.054,0.07000000000000001,0.113,0.11,0.06900000000000001,0.093,0.582,0.138,0.029,0.04,0.869,0.07000000000000001,0.002,0.004,0.413,0.006,0.054,0.07099999999999999,0.115,0.111,0.068,0.092,0.574,0.136,0.029,0.039,0.856,0.06900000000000001,0.002,0.004,0.408,0.006,0.054,0.07099999999999999,0.115,0.112,0.07199999999999999,0.097,0.61,0.145,0.029,0.04,0.881,0.07099999999999999,0.002,0.004,0.418,0.006,0.054,0.07199999999999999,0.116,0.113,0.07000000000000001,0.091,0.569,0.135,0.029,0.038,0.835,0.067,0.002,0.004,0.392,0.006,0.053,0.06900000000000001,0.111,0.108,0.07099999999999999,0.094,0.587,0.139,0.029,0.039,0.856,0.068,0.002,0.004,0.402,0.006,0.054,0.07000000000000001,0.113,0.11,0.07000000000000001,0.089,0.5580000000000001,0.133,0.029,0.037,0.821,0.066,0.002,0.004,0.388,0.005,0.052,0.067,0.108,0.105,0.07199999999999999,0.092,0.576,0.137,0.029,0.038,0.839,0.067,0.002,0.004,0.399,0.006,0.054,0.06900000000000001,0.111,0.108,0.067,0.09,0.5659999999999999,0.134,0.029,0.04,0.869,0.07000000000000001,0.002,0.004,0.409,0.006,0.053,0.07099999999999999,0.114,0.111,0.07000000000000001,0.095,0.594,0.141,0.029,0.04,0.871,0.07000000000000001,0.002,0.004,0.414,0.006,0.054,0.07099999999999999,0.115,0.112,0.068,0.092,0.575,0.137,0.029,0.039,0.862,0.06900000000000001,0.002,0.004,0.412,0.006,0.053,0.07000000000000001,0.113,0.11,0.07000000000000001,0.094,0.59,0.14,0.029,0.039,0.867,0.06900000000000001,0.002,0.004,0.411,0.006,0.053,0.07099999999999999,0.114,0.111,0.07199999999999999,0.097,0.608,0.144,0.029,0.04,0.873,0.07000000000000001,0.002,0.004,0.414,0.006,0.053,0.07099999999999999,0.115,0.112,0.06900000000000001,0.093,0.582,0.138,0.029,0.04,0.879,0.07000000000000001,0.002,0.004,0.413,0.006,0.054,0.07199999999999999,0.116,0.113,0.06900000000000001,0.092,0.578,0.137,0.03,0.04,0.873,0.07000000000000001,0.002,0.004,0.414,0.006,0.053,0.07000000000000001,0.114,0.111,0.06900000000000001,0.093,0.583,0.138,0.029,0.04,0.871,0.07000000000000001,0.002,0.004,0.414,0.006,0.053,0.07099999999999999,0.115,0.112,0.06900000000000001,0.093,0.584,0.139,0.029,0.04,0.869,0.06900000000000001,0.002,0.004,0.41,0.006,0.054,0.07099999999999999,0.116,0.112,0.07099999999999999,0.096,0.602,0.143,0.029,0.04,0.877,0.07000000000000001,0.002,0.004,0.416,0.006,0.054,0.07199999999999999,0.116,0.113,0.07000000000000001,0.093,0.581,0.138,0.029,0.039,0.865,0.06900000000000001,0.002,0.004,0.41,0.006,0.054,0.07099999999999999,0.115,0.112,0.07000000000000001,0.094,0.588,0.14,0.029,0.04,0.871,0.07000000000000001,0.002,0.004,0.416,0.006,0.054,0.07099999999999999,0.115,0.112],[0.495,0.775,0.713,-0.596,0.627,0.317,-0.266,0.266,0.05,0.883,1.308,-1.319,-2.319,-1.952,0.594,0.164,1.499,1.689,0.968,-0.851,1.349,1.45,0.884,-0.877,1.544,2.07,1.249,-1.484,-0.586,-0.863,0.587,0.478,0.988,0.44,-0.397,0.434,0.002,-0.679,-0.712,0.8090000000000001,1.171,0.616,-0.266,0.182,-1.095,-1.813,0.675,1.315,2.098,2.045,0.9379999999999999,-0.708,0.729,-0.32,-0.513,0.702,2.266,2.543,1.726,-1.844,0.299,-0.104,1.611,0.038,0.358,0.027,-0.838,0.305,-1.47,-0.6850000000000001,-0.6879999999999999,0.436,-1.624,-0.577,-1.082,0.5590000000000001,1.614,0.129,-3.479,2.678,0.184,-0.135,-0.842,0.357,-1.779,-1.171,-1.245,0.977,-1.812,-0.843,-1.482,0.91,0.476,0.102,-3.153,1.297,-1.744,-2.055,-1.557,1.07,-2.701,-0.893,0.852,-1.06,-2.196,-0.101,0.176,-0.6889999999999999,0.178,0.625,-2.939,0.095,-0.215,0.296,0.709,-0.671,0.05,0.136,0.184,-0.184,0.122,0.08799999999999999,-0.008,-0.006,-0.6860000000000001,-0.642,0.063,0.179,-0.88,-0.468,-0.669,-0.419,-2.546,0.66,0.718,-1.439,-5.996,-1.752,-0.252,-0.621,-1.864,0.5639999999999999,-5.105,-1.605,-0.399,-0.804,-1.471,0.668,-1.802,0.278,-0.4,-0.204,-3.897,-2.663,-3.171,2.383,-1.174,-0.638,-4.26,0.823,-1.958,-1.277,-0.717,-0.488,-4.157,-0.475,0.609,-1.385,-6.148,-1.9,-1.354,0.126,-4.418,-1.19,-5.525,-1.888,0.269,0.156,-1.16,-0.034,-2.671,-0.925,-1.951,1.244,-4.203,-1.129,-2.061,0.742,-1.264,-0.697,-5.592,1.161,2.555,2.224,0.608,-0.489,0.656,-0.501,-1.793,1.798,2.54,1.868,-0.991,0.389,3.354,1.601,-0.603,1.561,1.321,0.889,-0.225,0.118,-0.66,-0.825,-1.454,1.308,-1.056,-0.79,-1.07,0.826,1.681,1.142,-1.769,0.6879999999999999,2.32,2.785,1.837,-1.544,1.691,-0.186,-1.664,1.838,1.317,0.099,0.244,0.16,3.978,2.1,0.991,1.055,1.476,0.654,-0.44,0.673,-0.356,-2.103,-2.268,2.467,2.118,0.042,-1.914,1.848,3.316,1.485,0.094,1.493,-0.192,-0.437,-0.798,0.399,-0.987,-0.171,-0.503,0.232,-0.6830000000000001,0.642,-0.704,-0.07000000000000001,-1.983,-0.832,-1.851,-0.469,-0.26,-0.131,-0.16,-0.119,-0.635,0.3,0.793,-0.904,1.492,1.499,-1.319,0.505,-1.366,-0.015,-0.499,-1.39,1.171,1.392,0.256,-0.82,-0.424,0.59,-0.714,0.292,-1.421,0.72,-0.367,-0.546,-3.161,-1.792,-2.182,-0.265,-0.973,-0.876,-0.147,0.244,-0.037,0.234,0.344,-0.368,0.175,0.338,0.08,-0.182,-2.412,-1.392,0.168,-0.671,-0.979,-1.063,-0.925,0.45,-1.438,-0.311,0.235,-0.438,-0.135,0.053,-1.971,1.237,-0.877,-0.855,-1.932,0.851,-1.311,-1.301,-0.546,0.491,-0.537,-0.141,0.016,-0.096,-0.178,0.547,0.08,-0.394,0.117,0.123,-0.953,0.218,-0.06,0.279,1.064,-0.419,0.679,0.062,1.622,-1.19,2.56,-0.634,-0.891,1.66,0.468,0.013,3.121,-0.375,-1.018,-0.469,0.775,-0.388,-0.801,-1.594,0.553,-0.129,1.696,0.267,0.605,-0.059,1.24,0.52,2.146,0.013],[0.8100000000000001,0.9340000000000001,0.9340000000000001,0.9340000000000001,0.725,0.991,0.991,0.991,0.976,0.9340000000000001,0.741,0.741,0.101,0.504,0.9340000000000001,0.991,0.334,0.594,0.9340000000000001,0.9340000000000001,0.389,0.68,0.9340000000000001,0.9340000000000001,0.315,0.443,0.78,0.668,0.753,0.9340000000000001,0.9340000000000001,0.96,0.537,0.961,0.974,0.961,0.998,0.9340000000000001,0.9340000000000001,0.9340000000000001,0.448,0.9340000000000001,0.991,0.991,0.497,0.522,0.9340000000000001,0.741,0.152,0.443,0.9340000000000001,0.9340000000000001,0.7,0.991,0.96,0.9340000000000001,0.111,0.242,0.5679999999999999,0.515,0.909,0.991,0.639,0.995,0.867,0.995,0.9340000000000001,0.991,0.335,0.9340000000000001,0.9340000000000001,0.961,0.28,0.9399999999999999,0.877,0.9409999999999999,0.28,0.991,0.034,0.195,0.9389999999999999,0.991,0.9340000000000001,0.984,0.247,0.823,0.78,0.9340000000000001,0.242,0.9340000000000001,0.668,0.9340000000000001,0.8169999999999999,0.991,0.07000000000000001,0.741,0.252,0.443,0.648,0.877,0.055,0.9340000000000001,0.9340000000000001,0.877,0.128,0.991,0.991,0.9340000000000001,0.9389999999999999,0.9340000000000001,0.115,0.991,0.9389999999999999,0.991,0.9340000000000001,0.9340000000000001,0.976,0.991,0.991,0.991,0.955,0.991,0.995,0.995,0.711,0.9340000000000001,0.991,0.991,0.594,0.96,0.9340000000000001,0.968,0.066,0.9340000000000001,0.9340000000000001,0.68,0,0.548,0.991,0.9340000000000001,0.23,0.9409999999999999,0,0.639,0.845,0.9340000000000001,0.675,0.9340000000000001,0.242,0.991,0.974,0.991,0.001,0.195,0.07000000000000001,0.32,0.448,0.9340000000000001,0.002,0.9340000000000001,0.193,0.76,0.9340000000000001,0.96,0.001,0.96,0.9340000000000001,0.698,0,0.515,0.723,0.991,0,0.8110000000000001,0,0.515,0.926,0.991,0.823,0.995,0.056,0.9340000000000001,0.504,0.78,0.001,0.842,0.443,0.9340000000000001,0.414,0.9340000000000001,0,0.823,0.066,0.422,0.9340000000000001,0.96,0.715,0.96,0.522,0.522,0.066,0.515,0.9340000000000001,0.974,0.01,0.639,0.9340000000000001,0.648,0.395,0.9340000000000001,0.991,0.991,0.715,0.9340000000000001,0.68,0.741,0.515,0.9340000000000001,0.877,0.9340000000000001,0.261,0.833,0.539,0.9340000000000001,0.101,0.159,0.515,0.655,0.261,0.991,0.608,0.515,0.395,0.991,0.991,0.991,0.001,0.443,0.9340000000000001,0.877,0.335,0.9340000000000001,0.961,0.9340000000000001,0.867,0.443,0.392,0.283,0.15,0.995,0.515,0.515,0.01,0.668,0.991,0.668,0.9389999999999999,0.961,0.9340000000000001,0.974,0.537,0.991,0.96,0.991,0.711,0.9340000000000001,0.9340000000000001,0.991,0.192,0.9340000000000001,0.515,0.96,0.926,0.991,0.991,0.991,0.725,0.991,0.9340000000000001,0.9340000000000001,0.334,0.668,0.741,0.96,0.384,0.995,0.96,0.698,0.448,0.698,0.991,0.9340000000000001,0.831,0.9340000000000001,0.9340000000000001,0.991,0.354,0.9340000000000001,0.979,0.9409999999999999,0.015,0.522,0.443,0.991,0.537,0.9340000000000001,0.991,0.991,0.979,0.991,0.991,0.979,0.9389999999999999,0.991,0.991,0.991,0.08599999999999999,0.698,0.991,0.9340000000000001,0.537,0.877,0.9340000000000001,0.961,0.349,0.991,0.991,0.961,0.955,0.991,0.504,0.781,0.594,0.9340000000000001,0.513,0.9340000000000001,0.395,0.741,0.9409999999999999,0.96,0.789,0.991,0.995,0.991,0.9389999999999999,0.9409999999999999,0.991,0.974,0.955,0.991,0.9340000000000001,0.991,0.976,0.991,0.877,0.968,0.711,0.991,0.639,0.8110000000000001,0.066,0.9340000000000001,0.9340000000000001,0.608,0.8169999999999999,0.995,0.07000000000000001,0.979,0.531,0.96,0.9340000000000001,0.974,0.652,0.639,0.9409999999999999,0.991,0.261,0.991,0.9340000000000001,0.991,0.424,0.96,0.443,0.995],["Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Agreeableness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Conscientiousness","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Emotionality","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","Extraversion","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","HonestyHumility","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness","Openness"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>factor<\/th>\n      <th>personality_trait<\/th>\n      <th>strength index<\/th>\n      <th>strength_index<\/th>\n      <th>estimate<\/th>\n      <th>std.error<\/th>\n      <th>statistic<\/th>\n      <th>p_adjusted<\/th>\n      <th>group_id<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"Bfrtip","rowGroup":{"dataSrc":0},"columnDefs":[{"targets":0,"visible":false},{"className":"dt-right","targets":[4,5,6,7]},{"name":"factor","targets":0},{"name":"personality_trait","targets":1},{"name":"strength index","targets":2},{"name":"strength_index","targets":3},{"name":"estimate","targets":4},{"name":"std.error","targets":5},{"name":"statistic","targets":6},{"name":"p_adjusted","targets":7},{"name":"group_id","targets":8}],"displayLength":10,"order":[],"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="plots-1" class="level2">
+<h2 class="anchored" data-anchor-id="plots-1">Plots</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-5.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-6.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-7.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-8.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-9.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-10.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-11.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-12.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-13.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-14.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="prelim_anlayses_files/figure-html/unnamed-chunk-11-15.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
